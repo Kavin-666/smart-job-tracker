@@ -1,0 +1,436 @@
+/* Dark Mode Styles */
+:root.dark-mode {
+  /* Background & Text */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --border-color: #475569;
+  
+  /* Component Colors */
+  --card-bg: #1e293b;
+  --input-bg: #0f172a;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply dark mode to document */
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html.dark-mode body {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+html.dark-mode .app-shell {
+  background: #0f172a;
+  color: #f1f5f9;
+}
+
+html.dark-mode .app-shell::before {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+html.dark-mode .app-content {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Top Navbar - Dark Mode */
+html.dark-mode .top-navbar {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-bottom-color: rgba(148, 163, 184, 0.2);
+}
+
+html.dark-mode .navbar-brand {
+  color: #cbd5e1;
+}
+
+html.dark-mode .nav-link {
+  color: #94a3b8;
+}
+
+html.dark-mode .nav-link:hover {
+  color: #cbd5e1;
+}
+
+html.dark-mode .user-button {
+  background: linear-gradient(135deg, #334155 0%, #475569 100%);
+  border-color: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+}
+
+html.dark-mode .user-button:hover {
+  background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+}
+
+html.dark-mode .logout-button {
+  background: transparent;
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+html.dark-mode .logout-button:hover {
+  background: #334155;
+  border-color: #64748b;
+  color: #cbd5e1;
+}
+
+html.dark-mode .login-button {
+  color: #cbd5e1;
+  border-color: #cbd5e1;
+}
+
+html.dark-mode .login-button:hover {
+  background: #1e293b;
+}
+
+/* Sidebar - Dark Mode */
+html.dark-mode .sidebar {
+  background: #1e293b;
+  border-right-color: #475569;
+}
+
+html.dark-mode .sidebar-nav a {
+  color: #94a3b8;
+}
+
+html.dark-mode .sidebar-nav a:hover {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+html.dark-mode .sidebar-nav a.active {
+  background: linear-gradient(135deg, #334155, #475569);
+  color: #cbd5e1;
+}
+
+html.dark-mode .sidebar-footer {
+  background: linear-gradient(135deg, #334155, #475569);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+html.dark-mode .sidebar-footer span {
+  color: #94a3b8;
+}
+
+html.dark-mode .sidebar-footer strong {
+  color: #cbd5e1;
+}
+
+/* Cards & Panels - Dark Mode */
+html.dark-mode .metric-card,
+html.dark-mode .panel-card,
+html.dark-mode .job-card,
+html.dark-mode .application-form,
+html.dark-mode .filters-panel,
+html.dark-mode .stage-tabs,
+html.dark-mode .controls-row,
+html.dark-mode .empty-state,
+html.dark-mode .loader-shell {
+  background: #1e293b;
+  border-color: #475569;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode .metric-card span {
+  color: #94a3b8;
+}
+
+html.dark-mode .metric-card strong {
+  color: #f1f5f9;
+}
+
+html.dark-mode .metric-card p {
+  color: #cbd5e1;
+}
+
+html.dark-mode .page-header h2,
+html.dark-mode .dashboard-header h2 {
+  color: #f1f5f9;
+}
+
+html.dark-mode .page-header p,
+html.dark-mode .dashboard-header p {
+  color: #cbd5e1;
+}
+
+/* Buttons - Dark Mode */
+html.dark-mode .button-secondary {
+  background: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+html.dark-mode .button-secondary:hover {
+  background: #475569;
+  border-color: #64748b;
+}
+
+/* Action Buttons - Dark Mode */
+html.dark-mode .action-button {
+  background: linear-gradient(135deg, #334155 0%, #475569 100%);
+  border-color: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+}
+
+html.dark-mode .action-button:hover {
+  background: linear-gradient(135deg, #475569, #64748b);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+html.dark-mode .action-icon {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.2), rgba(148, 163, 184, 0.3));
+  color: #cbd5e1;
+}
+
+html.dark-mode .action-button strong {
+  color: #f1f5f9;
+}
+
+html.dark-mode .action-button p {
+  color: #94a3b8;
+}
+
+/* Form Inputs - Dark Mode */
+html.dark-mode .search-bar input,
+html.dark-mode .filters-panel select,
+html.dark-mode .application-form input,
+html.dark-mode .application-form select,
+html.dark-mode .application-form textarea {
+  background: #0f172a;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+html.dark-mode .search-bar input::placeholder {
+  color: #64748b;
+}
+
+html.dark-mode .search-bar input:focus,
+html.dark-mode .filters-panel select:focus,
+html.dark-mode .application-form input:focus,
+html.dark-mode .application-form select:focus,
+html.dark-mode .application-form textarea:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
+}
+
+/* Filter Summary - Dark Mode */
+html.dark-mode .filter-summary {
+  background: #334155;
+  border-color: #475569;
+  color: #f1f5f9;
+}
+
+/* Progress Items - Dark Mode */
+html.dark-mode .progress-item {
+  background: #334155;
+  border-color: #475569;
+}
+
+html.dark-mode .progress-label {
+  color: #94a3b8;
+}
+
+html.dark-mode .progress-value {
+  color: #14b8a6;
+}
+
+/* Motivation Quote - Dark Mode */
+html.dark-mode .motivation-quote {
+  background: linear-gradient(135deg, #334155, #475569);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+html.dark-mode .motivation-quote blockquote {
+  color: #f1f5f9;
+}
+
+html.dark-mode .motivation-quote cite {
+  color: #94a3b8;
+}
+
+/* Status Pills - Dark Mode */
+html.dark-mode .status-pill.applied {
+  background: rgba(13, 148, 136, 0.25);
+  color: #5eead4;
+}
+
+html.dark-mode .status-pill.interview {
+  background: rgba(59, 130, 246, 0.25);
+  color: #60a5fa;
+}
+
+html.dark-mode .status-pill.offer {
+  background: rgba(251, 191, 36, 0.25);
+  color: #fde047;
+}
+
+html.dark-mode .status-pill.rejected {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+}
+
+/* Job Card - Dark Mode */
+html.dark-mode .job-card-head h3 {
+  color: #f1f5f9;
+}
+
+html.dark-mode .job-card-head p {
+  color: #94a3b8;
+}
+
+html.dark-mode .job-card-summary span {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+html.dark-mode .job-card-note {
+  color: #cbd5e1;
+}
+
+html.dark-mode .job-card-meta strong {
+  color: #f1f5f9;
+}
+
+html.dark-mode .job-card-meta p {
+  color: #94a3b8;
+}
+
+html.dark-mode .job-card-actions button,
+html.dark-mode .job-card-actions a {
+  background: #334155;
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+html.dark-mode .job-card-actions button:hover,
+html.dark-mode .job-card-actions a:hover {
+  background: #475569;
+  border-color: #64748b;
+  color: #f1f5f9;
+}
+
+html.dark-mode .bookmark-button {
+  background: #334155;
+  border-color: #475569;
+  color: #14b8a6;
+}
+
+html.dark-mode .bookmark-button:hover {
+  background: #475569;
+  border-color: #64748b;
+}
+
+/* Labels & Text - Dark Mode */
+html.dark-mode .filter-group label,
+html.dark-mode .sort-select label {
+  color: #cbd5e1;
+}
+
+html.dark-mode .application-form label {
+  color: #f1f5f9;
+}
+
+html.dark-mode .application-form label span {
+  color: #94a3b8;
+}
+
+html.dark-mode .pill-chip {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+html.dark-mode .panel-card header span,
+html.dark-mode .company-pill .pill-chip {
+  color: #94a3b8;
+}
+
+/* Empty State & Loader - Dark Mode */
+html.dark-mode .empty-state h2 {
+  color: #f1f5f9;
+}
+
+html.dark-mode .empty-state p {
+  color: #94a3b8;
+}
+
+html.dark-mode .loader-shell .spinner {
+  border-color: #475569;
+  border-top-color: #14b8a6;
+}
+
+/* Stage Tabs - Dark Mode */
+html.dark-mode .stage-tabs button {
+  background: #334155;
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+html.dark-mode .stage-tabs button.active {
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  border-color: transparent;
+  color: white;
+}
+
+/* Error Message - Dark Mode */
+html.dark-mode .error-message {
+  color: #fca5a5;
+}
+
+/* Theme Toggle Button - Dark Mode */
+html.dark-mode .theme-toggle-button {
+  background: linear-gradient(135deg, #334155 0%, #475569 100%);
+  border-color: rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+}
+
+html.dark-mode .theme-toggle-button:hover {
+  background: linear-gradient(135deg, #475569, #64748b);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+/* Logo Shell - Dark Mode */
+html.dark-mode .logo-shell {
+  background: linear-gradient(135deg, #334155, #475569);
+  border-color: #475569;
+}
+
+/* Company Avatar - Already using gradient, looks good in dark mode */
+
+/* Mobile Menu - Dark Mode */
+html.dark-mode .mobile-menu {
+  background: #1e293b;
+  border-bottom-color: #475569;
+}
+
+html.dark-mode .mobile-nav-link {
+  color: #cbd5e1;
+}
+
+html.dark-mode .mobile-nav-link:hover {
+  background: #334155;
+}
+
+html.dark-mode .mobile-login-button {
+  background: transparent;
+  color: #cbd5e1;
+  border-color: #cbd5e1;
+}
+
+html.dark-mode .mobile-login-button:hover {
+  background: #334155;
+}
+
+html.dark-mode .mobile-signup-button {
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  color: white;
+}
+
+html.dark-mode .mobile-logout-button {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
